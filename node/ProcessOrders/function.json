@@ -1,0 +1,12 @@
+{
+  "bindings": [
+    {
+      "name": "orders",
+      "type": "serviceBusTrigger",
+      "direction": "in",
+      "queueName": "orders",
+      "cardinality": "many",
+      "connection": "ServiceBusConnection"
+    }
+  ]
+}
