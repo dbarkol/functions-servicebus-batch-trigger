@@ -4,6 +4,6 @@ This repository contains examples for handling messages in batches with the Serv
 
 ## Samples
 
-- [.NET](./dotnet/README.md)
-- [Node](./node/README.md)
-- [Python](./python/README.md)
+- [.NET](./dotnet/)
+- [Node](./node/)
+- [Python](./python/)
