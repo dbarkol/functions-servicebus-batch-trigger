@@ -6,12 +6,12 @@
 
     ```json
     {
-    "IsEncrypted": false,
-    "Values": {
-        "FUNCTIONS_WORKER_RUNTIME": "python",
-        "AzureWebJobsStorage": "<storage-account-connection-string>",
-        "ServiceBusConnection":  "<service-bus-connection-string>"
-       }
+      "IsEncrypted": false,
+      "Values": {
+          "FUNCTIONS_WORKER_RUNTIME": "python",
+          "AzureWebJobsStorage": "<storage-account-connection-string>",
+          "ServiceBusConnection":  "<service-bus-connection-string>"
+      }
     }
     ```
 
@@ -21,15 +21,15 @@
 
     ```json
     {
-    "scriptFile": "__init__.py",
-    "bindings": [
+      "scriptFile": "__init__.py",
+      "bindings": [
         {
-          "name": "orders",
-          "type": "serviceBusTrigger",
-          "direction": "in",
-          "queueName": "orders",
-          "cardinality": "many",
-          "connection": "ServiceBusConnection"
+            "name": "orders",
+            "type": "serviceBusTrigger",
+            "direction": "in",
+            "queueName": "orders",
+            "cardinality": "many",
+            "connection": "ServiceBusConnection"
         }
       ]
     }
@@ -41,14 +41,14 @@
 
     ```json
     {
-    "version": "2.0",  
-    "logging": {
-        "applicationInsights": {
-        "samplingSettings": {
-            "isEnabled": true,
-            "excludedTypes": "Request"
-        }
-        }
+      "version": "2.0",  
+      "logging": {
+          "applicationInsights": {
+          "samplingSettings": {
+              "isEnabled": true,
+              "excludedTypes": "Request"
+            }
+          }
     },
     "extensions": {
         "serviceBus": {
@@ -61,8 +61,8 @@
         }
     },
     "extensionBundle": {
-        "id": "Microsoft.Azure.Functions.ExtensionBundle",
-        "version": "[2.*, 3.0.0)"
+          "id": "Microsoft.Azure.Functions.ExtensionBundle",
+          "version": "[2.*, 3.0.0)"
         }
     }
     ```
