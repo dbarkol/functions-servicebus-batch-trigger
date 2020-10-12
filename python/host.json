@@ -15,7 +15,6 @@
             "autoComplete": true,
             "maxConcurrentCalls": 4,
             "maxAutoRenewDuration": "00:05:00"
-           
         }
       }
   },   
