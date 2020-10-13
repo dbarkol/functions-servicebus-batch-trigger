@@ -35,7 +35,7 @@
     }
     ```
 
-3. Update the extension bundle version in the host.json. Configure additional optional settings under `extensions`, if necessary.
+3. Update the extension bundle version in the host.json. Set the `prefetchCount` to the maximum number of messages in the batch. Configure additional optional settings under `extensions`, if necessary.
 
     host.json
 
